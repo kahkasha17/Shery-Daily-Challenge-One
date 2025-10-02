@@ -1,0 +1,267 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html,
+body {
+ height: 100%;
+ width: 100%;
+  font-family: serif; 
+  overflow: hidden; 
+}
+
+#main {
+ height: 100vh;
+ width: 100%;
+ background: linear-gradient(
+   100deg,
+   rgba(88, 197, 193, 0.48) 0%,
+   rgba(246, 91, 2, 0.418) 100%
+  );
+  position: relative; 
+}
+
+#nav {
+ padding: 20px;
+ display: flex;
+ justify-content: space-between;
+  align-items: center; 
+  position: relative; 
+  z-index: 10; 
+}
+#nav-header {
+ font-size: 25px;
+ font-weight: 900;
+}
+#nav-header > span {
+ font-size: 25px;
+ font-weight: 900;
+ color: white;
+}
+#nav-header > span > img {
+ height: 20px;
+}
+#nav-items {
+ display: flex;
+ justify-content: space-between;
+ gap: 20px;
+ font-size: 18px;
+ font-weight: 100;
+ align-items: center;
+}
+#nav-items h3{
+     font-weight: 100;
+
+}
+#nav-items select {
+ width: auto;
+ background: none;
+ border: none;
+ font-size: 18px;
+ font-weight: 500;
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+ max-width: fit-content;
+  color: #333; 
+}
+#nav-items h3 {
+    margin: 0; 
+}
+.app-btn {
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ padding: 8px 20px;
+ border: 2px solid #000;
+ border-radius: 10px;
+ text-decoration: none;
+ color: #000;
+ font-weight: 700;
+ transition: 0.3s;
+}
+.app-btn:hover {
+ background: #f0f0f0;
+}
+.app-btn img {
+ background: none;
+ height: 20px;
+ width: auto;
+}
+
+#hero-image {
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%; 
+    height: auto;
+    max-height: 90%; 
+    object-fit: contain;
+    z-index: 2; 
+    opacity: 0.85; 
+}
+
+
+
+
+#center-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none; 
+    z-index: 3; 
+}
+#center-section img {
+ height: 60px;
+}
+#first-center, #second-center {
+    position: absolute; 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #333;
+    text-align: center;
+}
+#first-center {
+ left: 30%;
+ top: 30%;
+}
+#first-center #frst-center-left {
+ position: absolute;
+ top: -18px;
+ left: -30px;
+}
+#first-center #frst-center-right {
+ position: absolute;
+ top: -18px;
+ left: 180px; 
+ transform: scaleX(-1);
+}
+#second-center {
+ left: 60%; 
+ top: 35%;
+}
+#second-center #second-center-left {
+ position: absolute;
+ top: -18px;
+ left: -30px;
+}
+#second-center #second-center-right {
+ position: absolute;
+ top: -10px;
+ left: 150px; 
+ transform: scaleX(-1);
+}
+
+#second-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+#second-bottom-left {
+    position: absolute; 
+    top: 40%;
+    left: 5%; 
+    width: 42%;
+    z-index: 1; 
+}
+#second-bottom-left h1 {
+    text-transform: capitalize;
+  color: #fff;
+  font-size: 4.5vw; 
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+#second-bottom-right {
+    position: absolute;
+    top: 67%; 
+    right: 7%;
+    transform: translateY(-50%);
+    z-index: 3; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+#stack-info-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 180px;
+ 
+}
+#stack-info-box img {
+    height: 120px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+#stack-info-box h2 {
+    font-size: 2.2em;
+    font-weight: 900;
+    margin: 0;
+    color: #333;
+}
+#stack-info-box p {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.2;
+    margin: 0;
+}
+#footer-bar {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(5px);
+    z-index: 20; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    color: white;
+}
+
+.social-proof {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.profile-stack {
+    display: flex;
+    position: relative;
+    height: 40px;
+}
+.profile-stack img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin-right: -15px;
+}
+
+.reserve-btn {
+    background-color: white;
+    color: #222;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reserve-btn:hover {
+    background-color: #f0f0f0;
+}
